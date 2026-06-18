@@ -15,7 +15,7 @@ const form = document.querySelector('#leadForm');
 if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    window.location.href = 'thank-you.html';
+    window.location.href = '/thank-you';
   });
 }
 
