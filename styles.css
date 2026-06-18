@@ -985,7 +985,10 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
 }
 .faq-panel .faq-q{
   padding:22px 24px;
+  font-family:inherit;
   font-size:17px;
+  font-weight:800;
+  letter-spacing:-.02em;
   color:var(--navy);
 }
 .faq-panel .faq-q span{
@@ -2116,4 +2119,44 @@ body{
   .hero-modern-copy h1{
     font-size:clamp(36px,4.8vw,52px) !important;
   }
+}
+
+.hero-stat-label{
+  display:block;
+  color:var(--navy);
+  font-size:clamp(28px,3.6vw,42px);
+  line-height:1.05;
+  letter-spacing:-.05em;
+  font-weight:950;
+  margin-bottom:8px;
+}
+
+.opening-cta{
+  display:inline-flex;
+  margin-top:14px;
+  color:var(--accent);
+  font-size:14px;
+  font-weight:800;
+  text-decoration:none;
+}
+.opening-cta:hover{
+  color:var(--navy);
+  text-decoration:underline;
+}
+
+.openings-fallback{
+  margin:28px 0 0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.65;
+  max-width:720px;
+}
+.openings-fallback a{
+  color:var(--accent);
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.openings-fallback a:hover{
+  color:var(--navy);
 }

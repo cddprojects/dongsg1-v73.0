@@ -7,7 +7,9 @@ if (menuToggle && navLinks) {
 document.querySelectorAll('.faq-card').forEach((card, index) => {
   if (index === 0) card.classList.add('active');
   card.querySelector('.faq-q')?.addEventListener('click', () => {
-    card.classList.toggle('active');
+    const wasActive = card.classList.contains('active');
+    document.querySelectorAll('.faq-card').forEach(c => c.classList.remove('active'));
+    if (!wasActive) card.classList.add('active');
   });
 });
 
