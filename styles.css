@@ -2062,3 +2062,58 @@ body{
 .match-bar-head strong{
   font-size:18px;
 }
+
+
+/* V44: hero cards clearance, stats gap, headline one-line */
+.hero-card-1{
+  top:4px !important;
+}
+.hero-card-2{
+  top:4px !important;
+}
+.hero-card-3{
+  bottom:148px !important;
+}
+.hero-card-4{
+  bottom:162px !important;
+}
+
+@media(max-width:1180px){
+  .hero-card-1{
+    top:2px !important;
+  }
+  .hero-card-2{
+    top:2px !important;
+  }
+  .hero-card-3{
+    bottom:138px !important;
+  }
+  .hero-card-4{
+    bottom:152px !important;
+  }
+}
+
+.hero-modern-strip{
+  margin-top:28px !important;
+}
+
+.hero-modern-copy h1{
+  max-width:920px !important;
+}
+
+.hero-headline-lead{
+  display:block;
+}
+.hero-headline-follow{
+  display:block;
+  margin-top:0.12em;
+}
+
+@media(min-width:981px){
+  .hero-headline-lead{
+    white-space:nowrap;
+  }
+  .hero-modern-copy h1{
+    font-size:clamp(36px,4.8vw,52px) !important;
+  }
+}
