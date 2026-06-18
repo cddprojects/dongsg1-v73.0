@@ -2186,3 +2186,24 @@ body{
 .openings-fallback a:hover{
   color:var(--navy);
 }
+
+
+/* V45: equal-height role cards — align titles and CTAs across each row */
+.openings-grid{
+  align-items:stretch;
+}
+.opening-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.opening-top{
+  min-height:3.35em;
+}
+.opening-top h3{
+  line-height:1.25;
+}
+.opening-cta{
+  margin-top:auto;
+  padding-top:14px;
+}
