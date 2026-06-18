@@ -1223,16 +1223,21 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
 }
 .hero-modern-copy h1{
   max-width:980px;
-  margin:0 auto 24px;
-  font-size:clamp(48px,7vw,92px);
-  line-height:.92;
-  letter-spacing:-.085em;
+  margin:0 auto 20px;
+  font-size:clamp(36px,5vw,56px);
+  line-height:1.05;
+  letter-spacing:-.06em;
 }
 .hero-modern-copy p{
   max-width:760px;
-  margin:0 auto 30px;
+  margin:0 auto 16px;
   font-size:18px;
   color:#506177;
+}
+.hero-modern-copy .hero-sub{
+  margin-bottom:28px;
+  font-size:16px;
+  color:#64748b;
 }
 .hero-modern-copy .hero-actions{
   justify-content:center;
@@ -1255,12 +1260,14 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
   background:rgba(255,255,255,.62);
   border:1px solid rgba(229,221,208,.62);
 }
-.hero-modern-strip strong{
+.hero-modern-strip strong,
+.hero-stat .counter{
   display:block;
   color:var(--navy);
-  font-size:24px;
+  font-size:clamp(32px,4vw,48px);
   letter-spacing:-.05em;
-  line-height:1.1;
+  line-height:1;
+  margin-bottom:6px;
 }
 .hero-modern-strip span{
   display:block;
@@ -1284,7 +1291,7 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
     padding:76px 0 56px;
   }
   .hero-modern-copy h1{
-    font-size:44px;
+    font-size:34px;
   }
   .hero-modern-copy p{
     font-size:16px;
@@ -1601,26 +1608,29 @@ body{
 }
 .footer-links{
   display:flex !important;
-  flex-wrap:wrap;
-  gap:10px !important;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  gap:8px !important;
 }
 .footer-links a{
-  color:rgba(255,255,255,.82) !important;
-  font-weight:800 !important;
-  padding:10px 14px;
-  border-radius:999px;
-  background:rgba(255,255,255,.075);
+  color:rgba(255,255,255,.72) !important;
+  font-weight:600 !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  background:none !important;
   border:0 !important;
   box-shadow:none !important;
-  transition:.2s ease;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  transition:color .2s ease;
 }
 .footer-links a:after{
   content:"";
 }
 .footer-links a:hover{
-  transform:translateY(-2px);
-  background:rgba(184,240,90,.18);
-  color:#fff !important;
+  transform:none;
+  background:none !important;
+  color:var(--accent-2) !important;
 }
 .footer-bottom{
   display:flex;
@@ -1656,13 +1666,13 @@ body{
     gap:26px !important;
   }
   .footer-links{
-    display:grid !important;
-    grid-template-columns:1fr;
+    display:flex !important;
+    flex-direction:column;
   }
   .footer-links a{
-    width:100%;
-    justify-content:center;
-    text-align:center;
+    width:auto;
+    justify-content:flex-start;
+    text-align:left;
   }
   .footer-bottom{
     display:block;
@@ -1974,21 +1984,74 @@ body{
   font-size:13px;
   font-weight:700;
 }
-.what-we-are{
-  margin:18px 0 0;
+.what-we-are,
+.how-we-help{
+  margin:20px 0 0;
   padding:16px 18px;
   border-radius:18px;
   background:rgba(16,36,61,.04);
   border:1px solid rgba(16,36,61,.08);
 }
-.what-we-are p{
+.what-we-are p,
+.how-we-help p{
   margin:0 0 10px;
   color:var(--navy);
   font-size:14px;
   line-height:1.6;
 }
-.what-we-are p:last-child{
+.what-we-are p:last-child,
+.how-we-help p:last-child{
   margin-bottom:0;
+}
+.contact-copy > p{
+  margin-bottom:16px;
+}
+.contact-badges{
+  margin-top:24px;
+}
+.conversion-outcomes{
+  margin:20px 0 0;
+  padding:0 0 0 18px;
+  color:var(--navy);
+  font-size:14px;
+  line-height:1.7;
+}
+.conversion-outcomes li{
+  margin-bottom:8px;
+}
+.conversion-outcomes li:last-child{
+  margin-bottom:0;
+}
+.process-steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:20px;
+}
+.process-step{
+  padding:14px 12px;
+  border-radius:16px;
+  background:rgba(31,122,104,.08);
+  border:1px solid rgba(31,122,104,.14);
+  text-align:center;
+}
+.process-step strong{
+  display:block;
+  font-size:22px;
+  color:var(--accent);
+  margin-bottom:6px;
+}
+.process-step span{
+  display:block;
+  font-size:12px;
+  font-weight:700;
+  color:var(--navy);
+  line-height:1.4;
+}
+@media(max-width:640px){
+  .process-steps{
+    grid-template-columns:1fr;
+  }
 }
 .form-fee-note{
   margin:0 0 16px;
