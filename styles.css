@@ -61,8 +61,7 @@ a{color:inherit;text-decoration:none}
   flex:0 0 auto;
   border-right:1px solid #ece7dd;
 }
-.logo-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#b8f05a,#62c246);display:grid;place-items:center;box-shadow:none;position:relative;overflow:hidden}
-.logo-mark:before{content:"";width:17px;height:17px;border-radius:5px;background:white;display:block;transform:rotate(45deg)}
+.logo-mark{width:38px;height:38px;border-radius:12px;display:block;flex-shrink:0;object-fit:contain;box-shadow:none}
 .nav-links{
   display:flex;
   align-items:center;
@@ -2218,4 +2217,23 @@ body{
 .opening-cta{
   margin-top:14px;
   padding-top:0;
+}
+
+/* CDD form embed — dynamic height via postMessage, no fixed sizing */
+#leadForm{
+  overflow:visible;
+}
+#leadForm [data-cddform]{
+  display:block;
+  width:100%;
+  overflow:visible;
+  line-height:0;
+}
+#QBWpFormIFrame_1{
+  display:block;
+  width:100% !important;
+  max-width:100%;
+  border:0;
+  height: 850px !important;
+  vertical-align:top;
 }

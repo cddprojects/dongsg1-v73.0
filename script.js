@@ -4,22 +4,13 @@ if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 }
 
-document.querySelectorAll('.faq-card').forEach((card, index) => {
-  if (index === 0) card.classList.add('active');
+document.querySelectorAll('.faq-card').forEach((card, index) => {  if (index === 0) card.classList.add('active');
   card.querySelector('.faq-q')?.addEventListener('click', () => {
     const wasActive = card.classList.contains('active');
     document.querySelectorAll('.faq-card').forEach(c => c.classList.remove('active'));
     if (!wasActive) card.classList.add('active');
   });
 });
-
-const form = document.querySelector('#leadForm');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    window.location.href = '/thank-you';
-  });
-}
 
 const revealItems = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {

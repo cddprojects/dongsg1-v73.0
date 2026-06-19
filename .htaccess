@@ -1,10 +1,10 @@
 RewriteEngine On
 
-# Serve clean URLs (internal rewrite)
-RewriteRule ^thank-you/?$ thank-you.html [L]
-RewriteRule ^terms-and-conditions/?$ terms.html [L]
-RewriteRule ^privacy-policy/?$ privacy.html [L]
-RewriteRule ^pdpa/?$ pdpa.html [L]
+# Serve clean URLs from folder index files
+RewriteRule ^thank-you/?$ thank-you/index.html [L]
+RewriteRule ^terms-and-conditions/?$ terms-and-conditions/index.html [L]
+RewriteRule ^privacy-policy/?$ privacy-policy/index.html [L]
+RewriteRule ^pdpa/?$ pdpa/index.html [L]
 
 # Redirect old .html URLs to clean paths
 RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]

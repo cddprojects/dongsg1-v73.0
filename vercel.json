@@ -1,10 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/thank-you", "destination": "/thank-you.html" },
-    { "source": "/terms-and-conditions", "destination": "/terms.html" },
-    { "source": "/privacy-policy", "destination": "/privacy.html" },
-    { "source": "/pdpa", "destination": "/pdpa.html" }
-  ],
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/thank-you.html", "destination": "/thank-you", "permanent": true },
