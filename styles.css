@@ -2344,7 +2344,7 @@ body{
     order:1 !important;
   }
   .hero-card-stage{
-    display:grid !important;
+    display:none !important;
     order:2 !important;
     grid-template-columns:1fr !important;
     justify-items:center;
