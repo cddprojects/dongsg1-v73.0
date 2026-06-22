@@ -1371,6 +1371,19 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
   width:270px;
   animation:heroFloatFour 7s ease-in-out infinite;
 }
+.hero-card-4{
+  overflow:visible;
+}
+.hero-trust-badge{
+  position:absolute;
+  left:-270px;
+  bottom:-54px;
+  z-index:2;
+  width:330px !important;
+  max-width:none;
+  height:auto;
+  filter:drop-shadow(0 18px 42px rgba(16,36,61,.10));
+}
 @keyframes heroFloatOne{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes heroFloatTwo{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 @keyframes heroFloatThree{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
@@ -1387,6 +1400,7 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
   .hero-card-2{right:-52px; top:38px; width:275px;}
   .hero-card-3{left:-34px; width:280px; bottom:72px;}
   .hero-card-4{right:24px; width:248px; bottom:108px;}
+  .hero-trust-badge{left:-238px; bottom:-48px; width:300px !important;}
 }
 @media(max-width:980px){
   .hero-modern-grid{min-height:auto; padding:96px 0 72px;}
@@ -1413,6 +1427,12 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
     width:100% !important;
     animation:none;
     justify-self:center;
+  }
+  .hero-trust-badge{
+    position:static;
+    display:block;
+    width:100% !important;
+    margin-top:10px;
   }
   .hero-modern-copy{order:1;}
   .hero-modern-strip{order:3; width:100%;}
@@ -2315,5 +2335,44 @@ body{
   .benefit-card{
     border-radius:22px;
     padding:18px;
+  }
+}
+
+/* V47: requested hero CTA style swap + Marcus trust badge */
+@media(max-width:640px){
+  .hero-modern-copy{
+    order:1 !important;
+  }
+  .hero-card-stage{
+    display:grid !important;
+    order:2 !important;
+    grid-template-columns:1fr !important;
+    justify-items:center;
+    margin:24px auto 0 !important;
+    width:min(100%,300px) !important;
+  }
+  .hero-card-item:not(.hero-card-4){
+    display:none !important;
+  }
+  .hero-card-4{
+    display:block !important;
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    width:100% !important;
+    max-width:270px;
+    animation:none !important;
+  }
+  .hero-trust-badge{
+    position:static !important;
+    display:block !important;
+    width:100% !important;
+    max-width:300px;
+    margin:10px auto 0;
+  }
+  .hero-modern-strip{
+    order:3 !important;
   }
 }
