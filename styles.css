@@ -2260,8 +2260,11 @@ body{
 
 /* V46: editable benefits cards below the hero stats */
 .benefits-section{
-  padding-top:34px;
-  padding-bottom:72px;
+  padding-top:72px;
+  padding-bottom:24px;
+}
+.benefits-section + .section{
+  padding-top:48px;
 }
 .benefits-grid{
   display:grid;
@@ -2316,8 +2319,11 @@ body{
 }
 @media(max-width:980px){
   .benefits-section{
-    padding-top:28px;
-    padding-bottom:64px;
+    padding-top:64px;
+    padding-bottom:22px;
+  }
+  .benefits-section + .section{
+    padding-top:42px;
   }
   .benefits-grid{
     grid-template-columns:repeat(2,1fr);
@@ -2325,8 +2331,11 @@ body{
 }
 @media(max-width:640px){
   .benefits-section{
-    padding-top:18px;
-    padding-bottom:52px;
+    padding-top:52px;
+    padding-bottom:18px;
+  }
+  .benefits-section + .section{
+    padding-top:34px;
   }
   .benefits-grid{
     grid-template-columns:1fr;
