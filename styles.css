@@ -1376,7 +1376,7 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
 }
 .hero-trust-badge{
   position:absolute;
-  left:280px;
+  left:228px;
   bottom:10px;
   z-index:2;
   width:210px !important;
@@ -1400,7 +1400,7 @@ h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.075em;margin:
   .hero-card-2{right:-52px; top:38px; width:275px;}
   .hero-card-3{left:-34px; width:280px; bottom:72px;}
   .hero-card-4{right:70px; width:248px; bottom:108px;}
-  .hero-trust-badge{left:256px; bottom:6px; width:190px !important;}
+  .hero-trust-badge{left:208px; bottom:6px; width:190px !important;}
 }
 @media(max-width:980px){
   .hero-modern-grid{min-height:auto; padding:96px 0 72px;}
