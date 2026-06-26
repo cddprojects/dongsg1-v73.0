@@ -2425,6 +2425,8 @@ body{
   .hero-modern-strip{
     grid-column:1 / -1;
     grid-row:2;
+    justify-self:center;
+    width:min(900px,100%);
   }
 }
 
