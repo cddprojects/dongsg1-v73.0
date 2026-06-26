@@ -2119,11 +2119,19 @@ body{
 }
 
 .hero-modern-copy h1{
-  max-width:920px !important;
+  max-width:100% !important;
 }
 
 .hero-headline-lead{
   display:block;
+}
+.hero-headline-break{
+  display:none;
+}
+@media(min-width:981px){
+  .hero-headline-break{
+    display:block;
+  }
 }
 .hero-headline-follow{
   display:block;
@@ -2433,9 +2441,9 @@ body{
     width:190px !important;
   }
   .hero-card-2{
-    right:-42px !important;
+    right:-56px !important;
     top:8px !important;
-    width:236px !important;
+    width:228px !important;
   }
   .hero-card-3{
     left:-28px !important;
@@ -2456,7 +2464,12 @@ body{
 
 @media(min-width:1281px){
   .hero-modern-inner{
-    grid-template-columns:minmax(210px,1fr) minmax(460px,620px) minmax(210px,1fr);
+    grid-template-columns:minmax(220px,1fr) minmax(420px,560px) minmax(220px,1fr);
+  }
+  .hero-card-2{
+    right:-96px !important;
+    top:6px !important;
+    width:252px !important;
   }
   .hero-card-4{
     right:18px !important;
@@ -2470,10 +2483,15 @@ body{
 
 @media(min-width:1500px){
   .hero-modern-inner{
-    grid-template-columns:minmax(240px,1fr) minmax(520px,680px) minmax(240px,1fr);
+    grid-template-columns:minmax(250px,1fr) minmax(440px,580px) minmax(250px,1fr);
   }
   .hero-headline-lead{
-    white-space:nowrap;
+    white-space:normal;
+    text-wrap:balance;
+  }
+  .hero-card-2{
+    right:-104px !important;
+    width:248px !important;
   }
   .hero-card-4{
     right:24px !important;
