@@ -2498,3 +2498,35 @@ body{
     width:190px !important;
   }
 }
+
+/* V49: tighten hero spacing after stat strip removal */
+@media(min-width:981px){
+  .hero-modern-grid{
+    min-height:680px !important;
+    padding-top:168px !important;
+    padding-bottom:48px !important;
+    align-items:flex-start !important;
+  }
+  .hero-modern-inner{
+    min-height:520px !important;
+  }
+}
+
+@media(max-width:980px){
+  .hero-modern-grid{
+    min-height:auto !important;
+    padding-top:148px !important;
+    padding-bottom:40px !important;
+    align-items:flex-start !important;
+  }
+  .hero-modern-inner{
+    min-height:auto !important;
+  }
+}
+
+@media(max-width:640px){
+  .hero-modern-grid{
+    padding-top:128px !important;
+    padding-bottom:32px !important;
+  }
+}
