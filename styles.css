@@ -2132,7 +2132,8 @@ body{
 
 @media(min-width:981px){
   .hero-headline-lead{
-    white-space:nowrap;
+    white-space:normal;
+    text-wrap:balance;
   }
   .hero-modern-copy h1{
     font-size:clamp(36px,4.8vw,52px) !important;
@@ -2383,5 +2384,103 @@ body{
   }
   .hero-modern-strip{
     order:3 !important;
+  }
+}
+
+/* V48: keep floating hero cards visible beside headline on laptop/desktop */
+@media(min-width:981px){
+  .hero-modern-inner{
+    display:grid;
+    grid-template-columns:minmax(170px,1fr) minmax(420px,580px) minmax(170px,1fr);
+    grid-template-rows:auto auto;
+    gap:26px;
+    align-items:center;
+    justify-items:stretch;
+  }
+  .hero-modern-copy{
+    grid-column:2;
+    grid-row:1;
+    justify-self:center;
+    max-width:100% !important;
+    width:100%;
+  }
+  .hero-modern-copy h1{
+    max-width:100% !important;
+  }
+  .hero-modern-copy p{
+    max-width:100%;
+  }
+  .hero-card-stage{
+    grid-column:1 / -1;
+    grid-row:1;
+  }
+  .hero-modern-strip{
+    grid-column:1 / -1;
+    grid-row:2;
+  }
+}
+
+@media(min-width:981px) and (max-width:1280px){
+  .hero-modern-inner{
+    grid-template-columns:minmax(150px,1fr) minmax(380px,520px) minmax(150px,1fr);
+  }
+  .hero-modern-copy h1{
+    font-size:clamp(30px,3.6vw,44px) !important;
+  }
+  .hero-card-1{
+    left:-10px !important;
+    top:8px !important;
+    width:190px !important;
+  }
+  .hero-card-2{
+    right:-42px !important;
+    top:8px !important;
+    width:236px !important;
+  }
+  .hero-card-3{
+    left:-28px !important;
+    bottom:152px !important;
+    width:240px !important;
+  }
+  .hero-card-4{
+    right:12px !important;
+    bottom:166px !important;
+    width:200px !important;
+  }
+  .hero-trust-badge{
+    left:168px !important;
+    bottom:4px !important;
+    width:160px !important;
+  }
+}
+
+@media(min-width:1281px){
+  .hero-modern-inner{
+    grid-template-columns:minmax(210px,1fr) minmax(460px,620px) minmax(210px,1fr);
+  }
+  .hero-card-4{
+    right:18px !important;
+    width:228px !important;
+  }
+  .hero-trust-badge{
+    left:196px !important;
+    width:182px !important;
+  }
+}
+
+@media(min-width:1500px){
+  .hero-modern-inner{
+    grid-template-columns:minmax(240px,1fr) minmax(520px,680px) minmax(240px,1fr);
+  }
+  .hero-headline-lead{
+    white-space:nowrap;
+  }
+  .hero-card-4{
+    right:24px !important;
+    width:248px !important;
+  }
+  .hero-trust-badge{
+    left:208px !important;
+    width:190px !important;
   }
 }
