@@ -3159,8 +3159,11 @@ body{
     right:-64px !important;
   }
   .hero-card-4{
-    right:-84px !important;
-    gap:2px !important;
+    right:-124px !important;
+    gap:0 !important;
+  }
+  .hero-card-4 .hero-trust-badge{
+    margin-left:-4px !important;
   }
 }
 
@@ -3169,8 +3172,11 @@ body{
     right:-48px !important;
   }
   .hero-card-4{
-    right:-88px !important;
-    gap:2px !important;
+    right:-128px !important;
+    gap:0 !important;
+  }
+  .hero-card-4 .hero-trust-badge{
+    margin-left:-4px !important;
   }
 }
 
@@ -3179,8 +3185,11 @@ body{
     right:-72px !important;
   }
   .hero-card-4{
-    right:-80px !important;
-    gap:2px !important;
+    right:-120px !important;
+    gap:0 !important;
+  }
+  .hero-card-4 .hero-trust-badge{
+    margin-left:-4px !important;
   }
 }
 
@@ -3189,7 +3198,10 @@ body{
     right:-78px !important;
   }
   .hero-card-4{
-    right:-76px !important;
-    gap:2px !important;
+    right:-116px !important;
+    gap:0 !important;
+  }
+  .hero-card-4 .hero-trust-badge{
+    margin-left:-4px !important;
   }
 }
