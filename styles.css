@@ -3152,3 +3152,44 @@ body{
     display:block !important;
   }
 }
+
+/* V56: shift hero card 2 left 10px, card 4 right 60px, 5px badge gap */
+@media(min-width:981px){
+  .hero-card-2{
+    right:-94px !important;
+  }
+  .hero-card-4{
+    right:-44px !important;
+    gap:5px !important;
+  }
+}
+
+@media(min-width:981px) and (max-width:1280px){
+  .hero-card-2{
+    right:-78px !important;
+  }
+  .hero-card-4{
+    right:-48px !important;
+    gap:5px !important;
+  }
+}
+
+@media(min-width:1281px){
+  .hero-card-2{
+    right:-102px !important;
+  }
+  .hero-card-4{
+    right:-40px !important;
+    gap:5px !important;
+  }
+}
+
+@media(min-width:1500px){
+  .hero-card-2{
+    right:-108px !important;
+  }
+  .hero-card-4{
+    right:-36px !important;
+    gap:5px !important;
+  }
+}
