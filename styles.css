@@ -3022,7 +3022,7 @@ body{
     top:56px !important;
   }
   .hero-card-2{
-    top:24px !important;
+    top:40px !important;
   }
   .hero-card-3{
     bottom:36px !important;
@@ -3031,7 +3031,7 @@ body{
     display:flex !important;
     flex-direction:row !important;
     align-items:flex-end !important;
-    gap:12px !important;
+    gap:10px !important;
     right:16px !important;
     bottom:36px !important;
     width:auto !important;
@@ -3039,7 +3039,7 @@ body{
   }
   .hero-card-4 > img:first-child{
     display:block;
-    width:210px !important;
+    width:240px !important;
     flex:0 0 auto;
   }
   .hero-card-4 .hero-trust-badge{
@@ -3047,12 +3047,12 @@ body{
     transform:none !important;
     left:auto !important;
     bottom:auto !important;
-    width:176px !important;
+    width:200px !important;
     max-width:none;
     height:auto;
     flex:0 0 auto;
     align-self:flex-end;
-    margin-bottom:4px;
+    margin-bottom:0;
   }
   .hero-card-stage > .hero-trust-badge{
     display:none !important;
@@ -3064,7 +3064,7 @@ body{
     top:52px !important;
   }
   .hero-card-2{
-    top:22px !important;
+    top:36px !important;
   }
   .hero-card-3{
     bottom:32px !important;
@@ -3075,10 +3075,10 @@ body{
     gap:10px !important;
   }
   .hero-card-4 > img:first-child{
-    width:186px !important;
+    width:212px !important;
   }
   .hero-card-4 .hero-trust-badge{
-    width:158px !important;
+    width:178px !important;
   }
 }
 
@@ -3087,7 +3087,7 @@ body{
     top:60px !important;
   }
   .hero-card-2{
-    top:26px !important;
+    top:44px !important;
   }
   .hero-card-3{
     bottom:40px !important;
@@ -3095,13 +3095,13 @@ body{
   .hero-card-4{
     right:20px !important;
     bottom:40px !important;
-    gap:12px !important;
+    gap:10px !important;
   }
   .hero-card-4 > img:first-child{
-    width:220px !important;
+    width:252px !important;
   }
   .hero-card-4 .hero-trust-badge{
-    width:184px !important;
+    width:208px !important;
   }
 }
 
@@ -3110,7 +3110,7 @@ body{
     top:64px !important;
   }
   .hero-card-2{
-    top:28px !important;
+    top:48px !important;
   }
   .hero-card-3{
     bottom:44px !important;
@@ -3118,12 +3118,13 @@ body{
   .hero-card-4{
     right:24px !important;
     bottom:44px !important;
+    gap:10px !important;
   }
   .hero-card-4 > img:first-child{
-    width:228px !important;
+    width:262px !important;
   }
   .hero-card-4 .hero-trust-badge{
-    width:192px !important;
+    width:216px !important;
   }
 }
 
