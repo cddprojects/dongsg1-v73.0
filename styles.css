@@ -2723,16 +2723,24 @@ body{
   .hero-headline-line + .hero-headline-line{
     margin-top:0.04em !important;
   }
-  .hero-modern-copy p,
   .hero-modern-copy .hero-description{
     max-width:540px !important;
     margin-left:auto !important;
     margin-right:auto !important;
-    margin-bottom:24px !important;
-    font-size:17px !important;
+    margin-bottom:16px !important;
+    font-size:18px !important;
     line-height:1.7 !important;
     color:#506177 !important;
     opacity:1 !important;
+  }
+  .hero-modern-copy .hero-sub{
+    max-width:540px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    margin-bottom:28px !important;
+    font-size:16px !important;
+    line-height:1.65 !important;
+    color:#64748b !important;
   }
   .hero-card-1{
     left:8px !important;
@@ -2769,8 +2777,11 @@ body{
   .hero-modern-copy .hero-headline{
     font-size:44px !important;
   }
-  .hero-modern-copy p,
   .hero-modern-copy .hero-description{
+    max-width:480px !important;
+    font-size:18px !important;
+  }
+  .hero-modern-copy .hero-sub{
     max-width:480px !important;
     font-size:16px !important;
   }
@@ -2849,5 +2860,30 @@ body{
 }
 
 .hero-modern-copy .hero-description{
+  font-size:18px;
   color:#506177;
+}
+
+.benefits-disclaimer{
+  margin:28px 0 0;
+  max-width:920px;
+  text-align:left;
+  color:#64748b;
+  font-size:15px;
+  line-height:1.65;
+  text-wrap:balance;
+}
+
+@media(min-width:981px){
+  .benefits-disclaimer{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+  }
+}
+
+@media(max-width:980px){
+  .hero-headline-line{
+    white-space:normal !important;
+  }
 }
