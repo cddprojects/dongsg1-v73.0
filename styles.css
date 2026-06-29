@@ -2886,4 +2886,116 @@ body{
   .hero-headline-line{
     white-space:normal !important;
   }
+  .hero-modern-copy .hero-description{
+    font-size:16px !important;
+  }
+}
+
+/* V54: hero copy width, card spacing, and tablet/mobile description size */
+@media(min-width:981px){
+  .hero-modern-inner{
+    grid-template-columns:minmax(230px,1fr) minmax(460px,680px) minmax(230px,1fr) !important;
+  }
+  .hero-modern-copy{
+    max-width:680px !important;
+  }
+  .hero-modern-copy .hero-description,
+  .hero-modern-copy .hero-sub{
+    max-width:640px !important;
+  }
+  .hero-card-1{
+    left:-20px !important;
+    top:0 !important;
+  }
+  .hero-card-3{
+    left:-36px !important;
+    bottom:92px !important;
+  }
+  .hero-card-2{
+    right:-104px !important;
+    top:4px !important;
+  }
+  .hero-card-4{
+    right:108px !important;
+    bottom:92px !important;
+  }
+  .hero-card-stage > .hero-trust-badge{
+    right:6px !important;
+    bottom:10px !important;
+  }
+}
+
+@media(min-width:981px) and (max-width:1280px){
+  .hero-modern-inner{
+    grid-template-columns:minmax(200px,1fr) minmax(420px,620px) minmax(200px,1fr) !important;
+  }
+  .hero-modern-copy{
+    max-width:620px !important;
+  }
+  .hero-modern-copy .hero-description,
+  .hero-modern-copy .hero-sub{
+    max-width:580px !important;
+  }
+  .hero-card-1{
+    left:-24px !important;
+  }
+  .hero-card-3{
+    left:-40px !important;
+    bottom:88px !important;
+  }
+  .hero-card-2{
+    right:-88px !important;
+    top:6px !important;
+  }
+  .hero-card-4{
+    right:96px !important;
+    bottom:88px !important;
+  }
+}
+
+@media(min-width:1281px){
+  .hero-modern-inner{
+    grid-template-columns:minmax(260px,1fr) minmax(480px,700px) minmax(260px,1fr) !important;
+  }
+  .hero-modern-copy{
+    max-width:700px !important;
+  }
+  .hero-card-1{
+    left:-12px !important;
+  }
+  .hero-card-3{
+    left:-28px !important;
+    bottom:96px !important;
+  }
+  .hero-card-2{
+    right:-112px !important;
+    top:2px !important;
+  }
+  .hero-card-4{
+    right:112px !important;
+    bottom:96px !important;
+  }
+}
+
+@media(min-width:1500px){
+  .hero-modern-inner{
+    grid-template-columns:minmax(280px,1fr) minmax(500px,720px) minmax(280px,1fr) !important;
+  }
+  .hero-modern-copy{
+    max-width:720px !important;
+  }
+  .hero-card-1{
+    left:0 !important;
+  }
+  .hero-card-3{
+    left:-20px !important;
+    bottom:100px !important;
+  }
+  .hero-card-2{
+    right:-118px !important;
+  }
+  .hero-card-4{
+    right:118px !important;
+    bottom:100px !important;
+  }
 }
