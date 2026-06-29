@@ -1,9 +1,9 @@
 ---
 name: generate-images
-description: Generate website images, hero cards, backgrounds, and marketing graphics for Remote List. Use when the user asks to generate, create, or regenerate images, banners, thumbnails, hero assets, or visual files for this site.
+description: Generate website images, hero cards, backgrounds, and marketing graphics for Jobs Hutch. Use when the user asks to generate, create, or regenerate images, banners, thumbnails, hero assets, or visual files for this site.
 ---
 
-# Generate Images (Remote List)
+# Generate Images (Jobs Hutch)
 
 ## When to use
 
@@ -19,11 +19,11 @@ description: Generate website images, hero cards, backgrounds, and marketing gra
 4. **Save** to `assets/` using the existing filename when replacing, or a descriptive kebab-case name for new files.
 5. **Wire up** — update `index.html` or `styles.css` if the path or filename changed.
 
-## Remote List visual style
+## Jobs Hutch visual style
 
 | Element | Spec |
 |---------|------|
-| Brand | Remote List — career consultancy for Singapore Citizens & PRs |
+| Brand | Jobs Hutch — Singapore-focused flexible work job platform |
 | Mood | Professional, approachable, modern Singapore workplace |
 | Palette | Navy/teal accents aligned with `styles.css` (`--navy`, `--accent-2`, soft grid backgrounds) |
 | Hero cards | Floating profile/role cards; clean UI card frames; realistic but polished |
@@ -49,6 +49,6 @@ description: Generate website images, hero cards, backgrounds, and marketing gra
 ## Quality check
 
 - [ ] Filename matches HTML/CSS reference or HTML/CSS was updated
-- [ ] Visual style fits Remote List (professional SG career site)
+- [ ] Visual style fits Jobs Hutch (professional SG flexible-work job platform)
 - [ ] No incorrect or blurry on-image text
 - [ ] PNG suitable for web; reasonable dimensions for hero/card use
