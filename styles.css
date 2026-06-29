@@ -2689,38 +2689,50 @@ body{
 /* V53: three-line hero headline, larger cards, no text overlap */
 @media(min-width:981px){
   .hero-modern-grid{
-    min-height:860px !important;
+    min-height:880px !important;
     padding-top:172px !important;
-    padding-bottom:56px !important;
+    padding-bottom:60px !important;
   }
   .hero-modern-inner{
-    min-height:640px !important;
-    grid-template-columns:minmax(250px,1fr) minmax(320px,460px) minmax(250px,1fr) !important;
-    gap:32px !important;
+    min-height:660px !important;
+    grid-template-columns:minmax(260px,1fr) minmax(380px,580px) minmax(260px,1fr) !important;
+    gap:36px !important;
   }
   .hero-modern-copy{
     z-index:3 !important;
-    max-width:460px !important;
+    max-width:580px !important;
     width:100% !important;
-    padding:0 8px !important;
+    padding:0 12px !important;
   }
-  .hero-modern-copy h1{
-    max-width:440px !important;
+  .hero-modern-copy h1,
+  .hero-modern-copy .hero-headline{
+    max-width:none !important;
+    width:max-content !important;
+    max-width:100% !important;
     margin-left:auto !important;
     margin-right:auto !important;
+    margin-bottom:24px !important;
     font-size:52px !important;
-    line-height:1.08 !important;
+    line-height:1.14 !important;
     letter-spacing:-.055em !important;
   }
-  .hero-modern-copy p{
-    max-width:500px !important;
-    font-size:17px !important;
-    line-height:1.65 !important;
-  }
-  .hero-headline-lead{
+  .hero-headline-line{
     display:block !important;
-    white-space:normal !important;
-    text-wrap:balance !important;
+    white-space:nowrap !important;
+  }
+  .hero-headline-line + .hero-headline-line{
+    margin-top:0.04em !important;
+  }
+  .hero-modern-copy p,
+  .hero-modern-copy .hero-description{
+    max-width:540px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    margin-bottom:24px !important;
+    font-size:17px !important;
+    line-height:1.7 !important;
+    color:#506177 !important;
+    opacity:1 !important;
   }
   .hero-card-1{
     left:8px !important;
@@ -2734,12 +2746,12 @@ body{
   }
   .hero-card-3{
     left:-8px !important;
-    bottom:56px !important;
+    bottom:64px !important;
     width:300px !important;
   }
   .hero-card-4{
-    right:132px !important;
-    bottom:56px !important;
+    right:168px !important;
+    bottom:64px !important;
     width:258px !important;
   }
   .hero-card-stage > .hero-trust-badge{
@@ -2751,14 +2763,15 @@ body{
 
 @media(min-width:981px) and (max-width:1280px){
   .hero-modern-inner{
-    grid-template-columns:minmax(210px,1fr) minmax(300px,420px) minmax(210px,1fr) !important;
+    grid-template-columns:minmax(220px,1fr) minmax(360px,540px) minmax(220px,1fr) !important;
   }
-  .hero-modern-copy h1{
+  .hero-modern-copy h1,
+  .hero-modern-copy .hero-headline{
     font-size:44px !important;
-    max-width:380px !important;
   }
-  .hero-modern-copy p{
-    max-width:420px !important;
+  .hero-modern-copy p,
+  .hero-modern-copy .hero-description{
+    max-width:480px !important;
     font-size:16px !important;
   }
   .hero-card-1{
@@ -2771,12 +2784,12 @@ body{
   }
   .hero-card-3{
     left:-16px !important;
-    bottom:48px !important;
+    bottom:52px !important;
     width:262px !important;
   }
   .hero-card-4{
-    right:112px !important;
-    bottom:48px !important;
+    right:148px !important;
+    bottom:52px !important;
     width:224px !important;
   }
   .hero-card-stage > .hero-trust-badge{
@@ -2786,7 +2799,7 @@ body{
 
 @media(min-width:1281px){
   .hero-modern-inner{
-    grid-template-columns:minmax(280px,1fr) minmax(340px,480px) minmax(280px,1fr) !important;
+    grid-template-columns:minmax(280px,1fr) minmax(400px,580px) minmax(280px,1fr) !important;
   }
   .hero-card-1{
     left:24px !important;
@@ -2801,18 +2814,18 @@ body{
     width:308px !important;
   }
   .hero-card-4{
-    right:148px !important;
+    right:176px !important;
     width:268px !important;
   }
 }
 
 @media(min-width:1500px){
   .hero-modern-inner{
-    grid-template-columns:minmax(300px,1fr) minmax(360px,500px) minmax(300px,1fr) !important;
+    grid-template-columns:minmax(300px,1fr) minmax(420px,600px) minmax(300px,1fr) !important;
   }
-  .hero-modern-copy h1{
+  .hero-modern-copy h1,
+  .hero-modern-copy .hero-headline{
     font-size:54px !important;
-    max-width:460px !important;
   }
   .hero-card-1{
     left:36px !important;
@@ -2827,10 +2840,14 @@ body{
     width:320px !important;
   }
   .hero-card-4{
-    right:160px !important;
+    right:188px !important;
     width:278px !important;
   }
   .hero-card-stage > .hero-trust-badge{
     width:168px !important;
   }
+}
+
+.hero-modern-copy .hero-description{
+  color:#506177;
 }
