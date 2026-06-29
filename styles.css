@@ -3153,43 +3153,43 @@ body{
   }
 }
 
-/* V56: shift hero card 2 left 10px, card 4 right 60px, 5px badge gap */
+/* V56: hero card 2/card 4 horizontal tuning and tight Marcus Lim badge gap */
 @media(min-width:981px){
   .hero-card-2{
-    right:-94px !important;
+    right:-64px !important;
   }
   .hero-card-4{
-    right:-44px !important;
-    gap:5px !important;
+    right:-84px !important;
+    gap:2px !important;
   }
 }
 
 @media(min-width:981px) and (max-width:1280px){
   .hero-card-2{
-    right:-78px !important;
+    right:-48px !important;
   }
   .hero-card-4{
-    right:-48px !important;
-    gap:5px !important;
+    right:-88px !important;
+    gap:2px !important;
   }
 }
 
 @media(min-width:1281px){
   .hero-card-2{
-    right:-102px !important;
+    right:-72px !important;
   }
   .hero-card-4{
-    right:-40px !important;
-    gap:5px !important;
+    right:-80px !important;
+    gap:2px !important;
   }
 }
 
 @media(min-width:1500px){
   .hero-card-2{
-    right:-108px !important;
+    right:-78px !important;
   }
   .hero-card-4{
-    right:-36px !important;
-    gap:5px !important;
+    right:-76px !important;
+    gap:2px !important;
   }
 }
